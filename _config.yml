@@ -17,18 +17,20 @@ skills:
     - Python
     - SQL
     - Bash
-  platforms:
-    - Apache Airflow
+    - R
+  orchestration:
+    - Airflow
     - dbt
-    - Power BI
-    - Jira / Kanban
+    - Spark
+    - Flink
   cloud:
-    - GCP (BigQuery)
-    - Data Warehouse
-  databases:
-    - BigQuery
-    - PostgreSQL
+    - AWS
+  data_architecture:
     - Snowflake
+    - Iceberg
+  visualization:
+    - Power BI
+    - Trino
 
 collections:
   projects:

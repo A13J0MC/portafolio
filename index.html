@@ -45,45 +45,104 @@ title: "Home"
     <p>A focused stack for building production-grade data systems.</p>
 
     <div class="skills-grid">
+
       <div class="skill-card">
-        <div class="skill-card-icon">🐍</div>
-        <h3>Languages</h3>
-        <div class="tag-list">
-          {% for skill in site.skills.languages %}
-          <span class="tag">{{ skill }}</span>
-          {% endfor %}
+        <h3>
+          <svg class="skill-card-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9.585 11.692h4.328s2.432.039 2.432-2.35V5.391S16.714 3 12.168 3H11.8s-3.953-.076-3.953 2.941v1.812h3.97v-.636s.093-.84 1.158-.84h.506s1.003-.082 1.003.715v1.106s.108.776-.93.776H9.784s-2.597-.04-2.597 2.531v1.808s-.35 2.455 3.91 2.455h.488s3.878.138 3.878-2.624v-1.336h-3.883v.658s-.11.912-1.219.912H9.849s-1.086.041-1.086-.741V12.43s-.131-.738 1.252-.738h-.43zM0 0h24v24H0z"/></svg>
+          Languages
+        </h3>
+        <div class="tool-list">
+          <span class="tool-pill">
+            <img src="https://cdn.simpleicons.org/python/ffffff" alt="Python" width="14" height="14">
+            Python
+          </span>
+          <span class="tool-pill tool-pill--text">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg>
+            SQL
+          </span>
+          <span class="tool-pill">
+            <img src="https://cdn.simpleicons.org/gnubash/ffffff" alt="Bash" width="14" height="14">
+            Bash
+          </span>
+          <span class="tool-pill">
+            <img src="https://cdn.simpleicons.org/r/ffffff" alt="R" width="14" height="14">
+            R
+          </span>
         </div>
       </div>
 
       <div class="skill-card">
-        <div class="skill-card-icon">⚙️</div>
-        <h3>Orchestration & Processing</h3>
-        <div class="tag-list">
-          {% for skill in site.skills.platforms %}
-          <span class="tag">{{ skill }}</span>
-          {% endfor %}
+        <h3>
+          <svg class="skill-card-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+          Orchestration & Processing
+        </h3>
+        <div class="tool-list">
+          <span class="tool-pill">
+            <img src="https://cdn.simpleicons.org/apacheairflow/ffffff" alt="Airflow" width="14" height="14">
+            Airflow
+          </span>
+          <span class="tool-pill">
+            <img src="https://cdn.simpleicons.org/dbt/ffffff" alt="dbt" width="14" height="14">
+            dbt
+          </span>
+          <span class="tool-pill">
+            <img src="https://cdn.simpleicons.org/apachespark/ffffff" alt="Spark" width="14" height="14">
+            Spark
+          </span>
+          <span class="tool-pill">
+            <img src="https://cdn.simpleicons.org/apacheflink/ffffff" alt="Flink" width="14" height="14">
+            Flink
+          </span>
         </div>
       </div>
 
       <div class="skill-card">
-        <div class="skill-card-icon">☁️</div>
-        <h3>Cloud Platforms</h3>
-        <div class="tag-list">
-          {% for skill in site.skills.cloud %}
-          <span class="tag">{{ skill }}</span>
-          {% endfor %}
+        <h3>
+          <svg class="skill-card-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2zm0 5h-2V5h2v3zM4 19h16v2H4z"/></svg>
+          Cloud Platforms
+        </h3>
+        <div class="tool-list">
+          <span class="tool-pill">
+            <img src="https://cdn.simpleicons.org/amazonaws/ffffff" alt="AWS" width="14" height="14">
+            AWS
+          </span>
         </div>
       </div>
 
       <div class="skill-card">
-        <div class="skill-card-icon">🗄️</div>
-        <h3>Databases & Warehouses</h3>
-        <div class="tag-list">
-          {% for skill in site.skills.databases %}
-          <span class="tag">{{ skill }}</span>
-          {% endfor %}
+        <h3>
+          <svg class="skill-card-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C7.58 3 4 4.79 4 7v10c0 2.21 3.58 4 8 4s8-1.79 8-4V7c0-2.21-3.58-4-8-4zm6 14c0 .5-2.13 2-6 2s-6-1.5-6-2v-2.23C7.61 15.55 9.72 16 12 16s4.39-.45 6-1.23V17zm0-5c0 .5-2.13 2-6 2s-6-1.5-6-2v-2.23C7.61 10.55 9.72 11 12 11s4.39-.45 6-1.23V12zm-6-3C8.13 9 6 7.5 6 7s2.13-2 6-2 6 1.5 6 2-2.13 2-6 2z"/></svg>
+          Data Architecture
+        </h3>
+        <div class="tool-list">
+          <span class="tool-pill">
+            <img src="https://cdn.simpleicons.org/snowflake/ffffff" alt="Snowflake" width="14" height="14">
+            Snowflake
+          </span>
+          <span class="tool-pill">
+            <img src="https://cdn.simpleicons.org/apacheiceberg/ffffff" alt="Iceberg" width="14" height="14">
+            Iceberg
+          </span>
         </div>
       </div>
+
+      <div class="skill-card">
+        <h3>
+          <svg class="skill-card-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/></svg>
+          Visualization & Consume Layer
+        </h3>
+        <div class="tool-list">
+          <span class="tool-pill">
+            <img src="https://cdn.simpleicons.org/powerbi/ffffff" alt="Power BI" width="14" height="14">
+            Power BI
+          </span>
+          <span class="tool-pill">
+            <img src="https://cdn.simpleicons.org/trino/ffffff" alt="Trino" width="14" height="14">
+            Trino
+          </span>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -113,11 +172,11 @@ title: "Home"
             <li>Led the transactional and banking reconciliation project, recovering an estimated <strong>$700,000 USD</strong> by surfacing irregularities in third-party payments.</li>
           </ul>
           <div class="timeline-tags">
-            <span class="tag">dbt</span>
-            <span class="tag">SQL</span>
-            <span class="tag">BigQuery</span>
-            <span class="tag">Jira</span>
-            <span class="tag">Agile</span>
+            <span class="tool-pill tool-pill--sm"><img src="https://cdn.simpleicons.org/dbt/ffffff" alt="dbt" width="12" height="12"> dbt</span>
+            <span class="tool-pill tool-pill--sm"><img src="https://cdn.simpleicons.org/apacheairflow/ffffff" alt="Airflow" width="12" height="12"> Airflow</span>
+            <span class="tool-pill tool-pill--sm"><img src="https://cdn.simpleicons.org/powerbi/ffffff" alt="Power BI" width="12" height="12"> Power BI</span>
+            <span class="tool-pill tool-pill--sm"><img src="https://cdn.simpleicons.org/snowflake/ffffff" alt="Snowflake" width="12" height="12"> Snowflake</span>
+            <span class="tool-pill tool-pill--sm"><img src="https://cdn.simpleicons.org/jira/ffffff" alt="Jira" width="12" height="12"> Jira</span>
           </div>
         </div>
       </div>
@@ -138,11 +197,10 @@ title: "Home"
             <li>Provided data support to Fraud and Chargeback teams for disputing chargebacks with banks.</li>
           </ul>
           <div class="timeline-tags">
-            <span class="tag">Python</span>
-            <span class="tag">SQL</span>
-            <span class="tag">Power BI</span>
-            <span class="tag">BigQuery</span>
-            <span class="tag">dbt</span>
+            <span class="tool-pill tool-pill--sm"><img src="https://cdn.simpleicons.org/apacheairflow/ffffff" alt="Airflow" width="12" height="12"> Airflow</span>
+            <span class="tool-pill tool-pill--sm"><img src="https://cdn.simpleicons.org/powerbi/ffffff" alt="Power BI" width="12" height="12"> Power BI</span>
+            <span class="tool-pill tool-pill--sm"><img src="https://cdn.simpleicons.org/snowflake/ffffff" alt="Snowflake" width="12" height="12"> Snowflake</span>
+            <span class="tool-pill tool-pill--sm"><img src="https://cdn.simpleicons.org/jira/ffffff" alt="Jira" width="12" height="12"> Jira</span>
           </div>
         </div>
       </div>
@@ -162,10 +220,10 @@ title: "Home"
             <li>Created automations for the payments operations team using Python and Airflow.</li>
           </ul>
           <div class="timeline-tags">
-            <span class="tag">Python</span>
-            <span class="tag">Airflow</span>
-            <span class="tag">SQL</span>
-            <span class="tag">BI Dashboards</span>
+            <span class="tool-pill tool-pill--sm"><img src="https://cdn.simpleicons.org/apacheairflow/ffffff" alt="Airflow" width="12" height="12"> Airflow</span>
+            <span class="tool-pill tool-pill--sm"><img src="https://cdn.simpleicons.org/powerbi/ffffff" alt="Power BI" width="12" height="12"> Power BI</span>
+            <span class="tool-pill tool-pill--sm"><img src="https://cdn.simpleicons.org/snowflake/ffffff" alt="Snowflake" width="12" height="12"> Snowflake</span>
+            <span class="tool-pill tool-pill--sm"><img src="https://cdn.simpleicons.org/jira/ffffff" alt="Jira" width="12" height="12"> Jira</span>
           </div>
         </div>
       </div>
