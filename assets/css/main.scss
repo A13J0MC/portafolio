@@ -197,11 +197,9 @@ h1, h2, h3, h4 { line-height: 1.3; font-weight: 600; }
   transition: border-color var(--transition);
 }
 .skill-card:hover { border-color: var(--accent)66; }
-.skill-card-svg { width: 16px; height: 16px; margin-right: 8px; vertical-align: middle; color: var(--accent); flex-shrink: 0; }
 .skill-card h3 {
   font-size: 13px; font-weight: 600; margin-bottom: 16px;
   color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em;
-  display: flex; align-items: center;
 }
 
 .tool-list { display: flex; flex-wrap: wrap; gap: 8px; }
@@ -215,9 +213,7 @@ h1, h2, h3, h4 { line-height: 1.3; font-weight: 600; }
   white-space: nowrap;
 }
 .tool-pill:hover { border-color: var(--accent)88; background: var(--accent-dim); }
-.tool-pill img { display: block; flex-shrink: 0; }
-.tool-pill--sm { font-size: 11px; padding: 3px 8px; gap: 5px; }
-.tool-pill--text svg { color: var(--text-muted); }
+.tool-pill--sm { font-size: 11px; padding: 3px 8px; }
 
 /* ============================================
    EXPERIENCE SECTION
