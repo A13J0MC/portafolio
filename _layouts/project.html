@@ -1,0 +1,45 @@
+---
+layout: default
+---
+<article class="project-detail">
+  <div class="container">
+    <header class="project-header">
+      <a href="{{ '/projects/' | relative_url }}" class="back-link">← All Projects</a>
+      <div class="project-meta">
+        {% if page.status %}
+        <span class="badge badge--{{ page.status }}">{{ page.status | capitalize }}</span>
+        {% endif %}
+        {% if page.category %}
+        <span class="badge badge--category">{{ page.category }}</span>
+        {% endif %}
+      </div>
+      <h1>{{ page.title }}</h1>
+      {% if page.description %}
+      <p class="project-description">{{ page.description }}</p>
+      {% endif %}
+      <div class="project-links">
+        {% if page.github %}
+        <a href="{{ page.github }}" class="btn btn--outline" target="_blank" rel="noopener">View on GitHub</a>
+        {% endif %}
+        {% if page.demo %}
+        <a href="{{ page.demo }}" class="btn btn--primary" target="_blank" rel="noopener">Live Demo</a>
+        {% endif %}
+      </div>
+    </header>
+
+    {% if page.tech_stack %}
+    <section class="project-stack">
+      <h2>Tech Stack</h2>
+      <div class="tag-list">
+        {% for tech in page.tech_stack %}
+        <span class="tag">{{ tech }}</span>
+        {% endfor %}
+      </div>
+    </section>
+    {% endif %}
+
+    <section class="project-content">
+      {{ content }}
+    </section>
+  </div>
+</article>

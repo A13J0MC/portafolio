@@ -1,0 +1,62 @@
+title: "Alejandro Mendoza | Data Engineer"
+description: "Data Engineer specializing in scalable pipelines, cloud data platforms, and analytics infrastructure."
+author:
+  name: "Alejandro Mendoza"
+  email: "your.email@example.com"
+  github: "A13J0MC"
+  linkedin: "alejandro-mendoza"
+  location: "Mexico"
+
+url: "https://A13J0MC.github.io"
+baseurl: "/portafolio"
+
+tagline: "Building the pipelines that move data from chaos to clarity."
+
+skills:
+  languages:
+    - Python
+    - SQL
+    - Scala
+    - Bash
+  platforms:
+    - Apache Spark
+    - Apache Airflow
+    - dbt
+    - Kafka
+  cloud:
+    - AWS (S3, Glue, Redshift, Lambda)
+    - GCP (BigQuery, Dataflow, Pub/Sub)
+    - Azure (Data Factory, Synapse)
+  databases:
+    - PostgreSQL
+    - Snowflake
+    - Redshift
+    - BigQuery
+    - MongoDB
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+markdown: kramdown
+highlighter: rouge
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git

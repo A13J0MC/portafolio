@@ -1,0 +1,36 @@
+---
+layout: default
+title: Projects
+---
+
+<section class="projects-page">
+  <div class="container">
+    <div class="projects-page-header">
+      <p class="section-label">What I've built</p>
+      <h1>Projects</h1>
+      <p>End-to-end data engineering projects — pipelines, warehouses, and analytics infrastructure.</p>
+    </div>
+
+    <div class="projects-grid">
+      {% for project in site.projects %}
+      <a href="{{ project.url | relative_url }}" class="project-card" style="text-decoration:none;color:inherit;">
+        <div class="project-card-top">
+          <span class="project-card-icon">{{ project.icon | default: "📦" }}</span>
+          <div class="project-card-links">
+            {% if project.status %}
+            <span class="badge badge--{{ project.status }}">{{ project.status }}</span>
+            {% endif %}
+          </div>
+        </div>
+        <h3>{{ project.title }}</h3>
+        <p>{{ project.description }}</p>
+        <div class="tag-list">
+          {% for tech in project.tech_stack limit:5 %}
+          <span class="tag">{{ tech }}</span>
+          {% endfor %}
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
