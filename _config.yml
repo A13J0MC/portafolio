@@ -1,11 +1,11 @@
-title: "Alejandro Mendoza | Data Engineer"
-description: "Data Engineer specializing in scalable pipelines, cloud data platforms, and analytics infrastructure."
+title: "Alejandro Mendoza Cuesta | Data Engineer"
+description: "Data Engineer with 4+ years of experience building data pipelines, reconciliation systems, and analytics infrastructure at Rappi."
 author:
-  name: "Alejandro Mendoza"
-  email: "your.email@example.com"
+  name: "Alejandro Mendoza Cuesta"
+  email: "alemecu06@gmail.com"
   github: "A13J0MC"
   linkedin: "alejandro-mendoza"
-  location: "Mexico"
+  location: "Barranquilla, Colombia"
 
 url: "https://A13J0MC.github.io"
 baseurl: "/portafolio"
@@ -16,23 +16,19 @@ skills:
   languages:
     - Python
     - SQL
-    - Scala
     - Bash
   platforms:
-    - Apache Spark
     - Apache Airflow
     - dbt
-    - Kafka
+    - Power BI
+    - Jira / Kanban
   cloud:
-    - AWS (S3, Glue, Redshift, Lambda)
-    - GCP (BigQuery, Dataflow, Pub/Sub)
-    - Azure (Data Factory, Synapse)
+    - GCP (BigQuery)
+    - Data Warehouse
   databases:
+    - BigQuery
     - PostgreSQL
     - Snowflake
-    - Redshift
-    - BigQuery
-    - MongoDB
 
 collections:
   projects:
