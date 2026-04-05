@@ -7,7 +7,7 @@
       <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a>
       <a href="{{ '/about/' | relative_url }}" {% if page.url contains '/about' %}class="active"{% endif %}>About</a>
       <a href="{{ '/projects/' | relative_url }}" {% if page.url contains '/projects' %}class="active"{% endif %}>Projects</a>
-      <a href="mailto:{{ site.author.email }}" class="btn btn--nav">Hire Me</a>
+      <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}/" class="btn btn--nav" target="_blank" rel="noopener">Hire Me</a>
     </nav>
     <button class="nav-toggle" aria-label="Toggle navigation">
       <span></span><span></span><span></span>
